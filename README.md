@@ -1,0 +1,1 @@
+# This is a modern calculator-app which is made up of using html,css,javascript. you can use this as your next project to enhance your skills if you found any issue please feel free to create PR for this repo.
