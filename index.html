@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <section class="container">
+      <div class="input">
+        <input type="text" readonly id="display" placeholder="0" />
+      </div>
+      <div class="buttonContainer">
+        <div class="buttons">
+          <button class="btn" id="plus" onclick="getOperator('+')">+</button>
+          <button class="btn" value="7" onclick="handleClick(7)">7</button>
+          <button class="btn" id="four" onclick="handleClick(4)">4</button>
+          <button class="btn" id="one" onclick="handleClick(1)">1</button>
+          <button class="btn" id="zero" onclick="handleClick(0)">0</button>
+        </div>
+        <div class="buttons">
+          <button class="btn" id="min" onclick="getOperator('-')">-</button>
+          <button class="btn" id="eight" onclick="handleClick(8)">8</button>
+          <button class="btn" id="five" onclick="handleClick(5)">5</button>
+          <button class="btn" id="two" onclick="handleClick(2)">2</button>
+          <button class="btn" onclick="handleDecimal('.')">.</button>
+        </div>
+        <div class="buttons">
+          <button class="btn" id="mul" onclick="getOperator('*')">x</button>
+          <button class="btn" id="nine" onclick="handleClick(9)">9</button>
+          <button class="btn" onclick="handleClick(6)">6</button>
+          <button class="btn" onclick="handleClick(3)">3</button>
+          <button class="btn" onclick="handleClear()">C</button>
+        </div>
+        <div class="buttons">
+          <button class="btn" id="div" onclick="getOperator('/')">
+            &divide;
+          </button>
+          <button class="equal btn" onclick="handleResponse()">=</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
